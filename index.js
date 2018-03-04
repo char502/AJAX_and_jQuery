@@ -9,4 +9,4 @@ $(document).ready(function () {
     })
 })
 
-
+// Ajax response, Object or Array?
