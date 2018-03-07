@@ -36,3 +36,9 @@ $(document).ready(function () {
 
 
 // Working with Geolocation Data
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+        $('.answer').html('latitude: ' + position.coords.latitude + "<br />" + ' longitude: ' + position.coords.longitude);
+    });
+}
